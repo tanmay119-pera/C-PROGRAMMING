@@ -1,5 +1,8 @@
-/*                        Advance Project - 10: Dynamic Task Board (Zero-Waste DMA To-Do List)
+//!NOTE - PROJECT-08,PROJECT-09,PROJECT-10 are advanced projects that require a solid understanding of C programming concepts. They are designed for learners who have completed the foundational projects (PROJECT-01 to PROJECT-07) and are ready to tackle more complex applications involving dynamic memory management, file I/O, and data structures.
 
+//                     ADVANCE PROJECT - 10 : DYNAMIC TASK BOARD (DMA ENGINE)
+
+/*
  * Concept: Chapter 12 - Dynamic Memory Allocation (malloc, realloc, free)
  * Author : Adesh Srivastava (Tanmay)
  * License: MIT License
