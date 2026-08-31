@@ -1,4 +1,4 @@
-/*                             Project: Meetup & Workshop Log System
+/*                           Advance Project-09: Meetup & Workshop Log System
 
  * Concept: Chapter 11 - File Input / Output (File I/O)
  * Author : Adesh Srivastava (TANMAY)/tanmay119-pera

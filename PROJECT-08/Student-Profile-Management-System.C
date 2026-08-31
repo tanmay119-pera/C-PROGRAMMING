@@ -1,4 +1,4 @@
-/*!                ADVANCE PROJECT TITLE : STUDENT PROFILE MANAGEMENT SYSTEM                          */
+/*!                ADVANCE PROJECT - 08 : STUDENT PROFILE MANAGEMENT SYSTEM                          */
 /*
  *    Author        : Adesh Srivastava (TANMAY)/tanmay119-pera
  *    Target Course : BCA / B.Tech / B.Sc (Computer Science) - C Programming
