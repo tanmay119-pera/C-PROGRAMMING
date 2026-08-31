@@ -2,11 +2,11 @@
 
  * Concept: Chapter 11 - File Input / Output (File I/O)
  * Author : Adesh Srivastava (TANMAY)/tanmay119-pera
- * 
+ 
  * Description:
  * Demonstrates persistent disk storage in C by logging, displaying, searching,
  * and managing technical workshops and community meetups using file streams.
- *
+ 
  * Core File-IO Operations Demonstrated:
  * 1. fopen() with "a" (Append Mode) - Appending records without overwriting.
  * 2. fopen() with "r" (Read Mode)   - Sequential parsing from disk until EOF.
