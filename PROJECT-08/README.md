@@ -202,7 +202,7 @@ Distributed under the **MIT License**.
 
 ### Crafted with ❤️ & passion for clean C programming by
 
-## **[Your Name / GitHub Username]**
+## **[ADESH(TANMAY) / tanmay119-pera]**
 
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?style=flat-square&logo=github)](https://github.com/)
 [![C Language](https://img.shields.io/badge/C-Programming-00599C?style=flat-square&logo=c&logoColor=white)](https://en.wikipedia.org/wiki/C_(programming_language))
