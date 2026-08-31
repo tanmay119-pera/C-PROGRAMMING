@@ -1,10 +1,4 @@
-# PROJECT 6: POINTE SWAPPER
-
-[![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)](https://en.cppreference.com/w/c)
-[![GCC](https://img.shields.io/badge/Compiler-GCC_/_Clang-FCC624?style=for-the-badge&logo=gnubash&logoColor=black)](https://gcc.gnu.org/)
-[![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/)
-[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
-[![License](https://img.shields.io/badge/License-MIT-2ea44f?style=for-the-badge)](LICENSE)
+# PROJECT 6: POINTE SWAPPERDtps://img.shields.io/badge/License-MIT-2ea44f?style=for-the-badge)](LICENSE)
 
 > 🔄 An interactive educational CLI tool in C demonstrating in-place memory variable swapping via pointers — mastering Pass-by-Reference, address-of (`&`) and dereference (`*`) operators, hexadecimal address inspection (`%p`), and the algorithmic foundation of sorting algorithms.
 
