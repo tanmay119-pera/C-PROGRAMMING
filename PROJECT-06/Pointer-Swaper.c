@@ -20,7 +20,8 @@ Instead of just passing values (which can't be modified), we pass ADDRESSES.
 The swap() function then uses these addresses to modify the ACTUAL variables.
 
 DIFFICULTY: Beginner (Foundation level for DSA preparation)
-CONCEPTS: Pointers, Functions, Pass-by-Reference, Memory Management*/
+CONCEPTS: Pointers, Functions, Pass-by-Reference, Memory Management
+*/
 
 #include <stdio.h>
 
@@ -41,29 +42,71 @@ void swap(int *a, int *b) {
 }
 
 int main() {
-    // Declare two integer variables
-    int num1 = 10;
-    int num2 = 20;
+    // Declare two integer variables (will store user input)
+    int num1, num2;
     
-    printf("=== Pointer Swapper Demo ===\n\n");
+    printf("=== Pointer Swapper Demo - Interactive Version ===\n\n");
     
-    // Print original values
-    printf("Before swap:\n");
+    // INPUT CONSTRAINTS:
+    // ==================
+    // We're using 'int' data type which has limits:
+    // - Minimum value: -2,147,483,648 (about -2.1 billion)
+    // - Maximum value:  2,147,483,647 (about +2.1 billion)
+    // - Range: approximately -2^31 to +2^31 - 1
+    //
+    // For this beginner project, we recommend:
+    // - Use numbers between -1000 and 1000 (easy to track mentally)
+    // - Avoid very large numbers (over 1 million) for clarity
+    // - Decimal points will be ignored (int only stores whole numbers)
+    //
+    // Why these limits?
+    // 1. 'int' = 4 bytes = 32 bits (1 bit for sign, 31 bits for value)
+    // 2. Helps you see the swap clearly without dealing with huge numbers
+    // 3. Prevents overflow errors (when number exceeds max value)
+    
+    printf("INPUT GUIDELINES:\n");
+    printf("- Enter ANY whole number (integer)\n");
+    printf("- Recommended range: -1000 to 1000\n");
+    printf("- Maximum range: -2,147,483,648 to 2,147,483,647\n");
+    printf("- Do NOT use decimals (e.g., 3.14 won't work)\n\n");
+    
+    // Get first number from user
+    printf("Enter first number (num1): ");
+    scanf("%d", &num1);
+    
+    // Get second number from user
+    printf("Enter second number (num2): ");
+    scanf("%d", &num2);
+    
+    printf("\n");
+    
+    // Print original values (what user entered)
+    printf("=== BEFORE SWAP ===\n");
     printf("num1 = %d\n", num1);
     printf("num2 = %d\n", num2);
+    printf("\nMemory addresses:\n");
+    printf("Address of num1: %p\n", (void*)&num1);  // %p prints memory address
+    printf("Address of num2: %p\n", (void*)&num2);
     
     // Call swap function, passing ADDRESSES (&) of the variables
     // & operator gives the address of a variable
     // This is pass-by-reference - the function works on actual variables
+    // scanf("%d", &num1) also uses & to store input at that address
+    printf("\n[Calling swap function...]\n\n");
     swap(&num1, &num2);
     
-    printf("\nAfter swap:\n");
+    // Print swapped values
+    printf("=== AFTER SWAP ===\n");
     printf("num1 = %d\n", num1);
     printf("num2 = %d\n", num2);
+    printf("\nMemory addresses (same as before!):\n");
+    printf("Address of num1: %p\n", (void*)&num1);  // Address stays same
+    printf("Address of num2: %p\n", (void*)&num2);  // Only VALUES changed
     
     printf("\n--- Why Pointers Matter ---\n");
     printf("Without pointers, you can't modify variables from inside a function.\n");
     printf("Pointers let you pass the ADDRESS, so the function can change the actual values.\n");
+    printf("\nNotice: The addresses stayed the same, but the values swapped!\n");
     
     return 0;
 }
@@ -90,4 +133,6 @@ int main() {
    Step 1: temp = 10
    Step 2: num1 = 20
    Step 3: num2 = 10 (from temp)
-   After:  num1[20]  num2[10]*/
+   After:  num1[20]  num2[10] ✓
+
+*/
